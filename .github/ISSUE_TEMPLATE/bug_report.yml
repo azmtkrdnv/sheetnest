@@ -1,0 +1,36 @@
+name: Bug report
+description: A part is read wrongly, a layout is invalid, or the output is wrong
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: Command or job file you ran. Attach the part file(s) if you can (zip them).
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: inspect
+    attributes:
+      label: Output of `sheetnest inspect <file>` (for import problems)
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Versions
+      placeholder: "sheetnest 0.1.0, Python 3.12, Windows 11"
+    validations:
+      required: true
+  - type: input
+    id: machine
+    attributes:
+      label: Controller / post-processor (for G-code problems)
+      placeholder: "LinuxCNC 2.9 + QtPlasmaC, post linuxcnc_qtplasmac"
