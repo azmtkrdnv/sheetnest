@@ -1,0 +1,4 @@
+file,quantity,material,thickness,rotations
+parts/flange_Q4.dxf,2,S235,5,"0,90,180,270"
+parts/strap_Q6.dxf,4,S235,5,"0,180"
+parts/gusset_Q16.dxf,10,S235,5,

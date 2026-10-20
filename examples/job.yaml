@@ -1,0 +1,72 @@
+# sheetnest job file. Paths are relative to this file.
+name: demo_job
+
+settings:
+  spacing: 6            # mm between cut edges (part-to-part), kerf included
+  margin: 10            # mm from parts to the sheet edge
+  rotations: [0, 90, 180, 270]
+  allow_mirror: false
+  part_in_part: true    # small parts inside the holes of big ones
+  time_limit: 20        # seconds of optimisation
+  gravity: left         # fill from the left, leave a reusable offcut on the right
+  sheet_selection: in_order   # use sheets in the order listed (remnants first)
+
+import:
+  join_tol: 0.05        # max gap (mm) when chaining loose lines/arcs into contours
+  # cut_layers: ["0", "OUTLINE"]      # only read these layers
+  # ignore_layers: ["*BEND*", "*DIM*"]
+  # mark_layers: ["*ETCH*"]           # kept as marking geometry
+
+sheets:                 # listed in priority order
+  - name: R17 remnant
+    file: stock/remnant_R17.dxf
+    quantity: 1
+    material: S235
+    thickness: 5
+  - name: S235 3000x1500
+    width: 3000
+    height: 1500
+    quantity: 20
+    material: S235
+    thickness: 5
+
+parts:
+  # every file in a folder; quantity taken from the file name (_Q12, x12) else 1
+  - folder: parts
+    pattern: "*.dxf"
+    material: S235
+    thickness: 5
+  - file: parts/cover_Q5.svg
+    material: S235
+    thickness: 5
+  - file: parts/mount_plate_Q4.step
+    optional: true        # skipped with a warning if STEP support isn't installed
+    quantity: 6
+    material: S235
+    thickness: 5          # overrides the 8 mm detected in the STEP, for the demo
+    rotations: [0, 180]   # e.g. grain / brushed direction
+  # a part given directly as coordinates (bulge on a vertex = arc to the next vertex)
+  - name: shim
+    outer: [[0, 0], [80, 0], [80, 40, 1], [0, 40]]
+    circles: [[25, 20, 6.5]]
+    quantity: 10
+    material: S235
+    thickness: 5
+  # - bom: bom.csv        # CSV with columns file, quantity, material, thickness, rotations
+
+output:
+  dxf: true
+  svg: true
+  html: true
+  remnant_min: 150      # report offcuts at least this wide
+  gcode:
+    post: generic_plasma   # generic_plasma | linuxcnc_qtplasmac | mach3_plasma | grbl_laser
+    feed: 2400             # mm/min
+    pierce_delay: 0.6      # s
+    kerf: 1.6              # mm (used with kerf_mode: controller)
+    kerf_mode: none        # none | controller (G41/G40)
+  cut:
+    lead_in: 5
+    lead_type: arc         # arc | line
+    outer_cw: true
+    hole_ccw: true
