@@ -1,0 +1,11 @@
+name,quantity,placed,width,height,area_mm2,holes,cut_length,material,thickness,file
+base_plate,3,3,420.0,260.0,95391.0,5,2028.4,S235,5.0,../parts/base_plate_Q3.dxf
+disc,12,12,110.0,109.98,8972.4,1,427.3,S235,5.0,../parts/disc_Q12.dxf
+flange,4,4,320.0,319.98,54685.7,9,2092.3,S235,5.0,../parts/flange_Q4.dxf
+gusset,16,16,200.0,200.0,23430.9,1,823.2,S235,5.0,../parts/gusset_Q16.dxf
+l_bracket,10,10,300.0,220.0,29947.0,2,1303.4,S235,5.0,../parts/l_bracket_Q10.dxf
+strap,6,6,640.0,70.0,41513.3,3,1714.7,S235,5.0,../parts/strap_Q6.dxf
+tab_hook,8,8,180.0,119.99,16562.0,2,665.9,S235,5.0,../parts/tab_hook_Q8.dxf
+cover,5,5,130.0,80.0,8913.7,2,594.5,S235,5.0,../parts/cover_Q5.svg
+mount_plate,6,6,250.0,140.0,31154.7,5,1194.7,S235,5.0,../parts/mount_plate_Q4.step
+shim,10,10,80.0,79.99,5580.5,1,326.5,S235,5.0,

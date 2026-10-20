@@ -1,0 +1,952 @@
+{
+  "summary": {
+    "job": "demo_job",
+    "created": "2026-10-20T19:05:09",
+    "sheets_used": 2,
+    "utilization": 0.3335,
+    "utilization_excl_offcut": 0.6907,
+    "parts_requested": 80,
+    "parts_placed": 80,
+    "elapsed_s": 30.27,
+    "layouts_evaluated": 413,
+    "settings": {
+      "spacing": 6,
+      "margin": 10,
+      "rotations": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "allow_mirror": false,
+      "part_in_part": true,
+      "curve_tolerance": 0.1,
+      "time_limit": 30.0,
+      "gravity": "left",
+      "sheet_selection": "in_order",
+      "workers": 0,
+      "seed": 1
+    },
+    "messages": [],
+    "transform": "placed = rotate(mirror_x(part), rotation deg about origin) + (x, y); part origin = lower-left corner of its bounding box as imported"
+  },
+  "sheets": [
+    {
+      "index": 1,
+      "sheet": "R17 remnant",
+      "width": 1400.0,
+      "height": 1250.0,
+      "material": "S235",
+      "thickness": 5.0,
+      "group": "S235 t=5",
+      "parts": 42,
+      "utilization": 0.6887,
+      "used_length": 1391.9,
+      "cut_length": 35263.8,
+      "pierces": 134,
+      "rapid_length": 15170.0,
+      "remnant": null,
+      "placements": [
+        {
+          "part": "base_plate",
+          "part_index": 0,
+          "instance": 1,
+          "x": 270.1,
+          "y": 10.098,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "base_plate",
+          "part_index": 0,
+          "instance": 2,
+          "x": 10.098,
+          "y": 436.096,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 1,
+          "x": 10.098,
+          "y": 702.094,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "flange",
+          "part_index": 2,
+          "instance": 1,
+          "x": 276.098,
+          "y": 10.207,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "flange",
+          "part_index": 2,
+          "instance": 2,
+          "x": 283.6162,
+          "y": 919.813,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "flange",
+          "part_index": 2,
+          "instance": 3,
+          "x": 406.0269,
+          "y": 617.6702,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 1,
+          "x": 230.098,
+          "y": 908.092,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "strap",
+          "part_index": 5,
+          "instance": 1,
+          "x": 719.552,
+          "y": 10.098,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 1,
+          "x": 10.098,
+          "y": 984.198,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 2,
+          "x": 10.098,
+          "y": 1100.392,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 3,
+          "x": 121.5642,
+          "y": 792.006,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 4,
+          "x": 203.3289,
+          "y": 709.6717,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "strap",
+          "part_index": 5,
+          "instance": 2,
+          "x": 795.55,
+          "y": 10.098,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 5,
+          "x": 276.098,
+          "y": 309.7713,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "strap",
+          "part_index": 5,
+          "instance": 3,
+          "x": 871.548,
+          "y": 10.098,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 6,
+          "x": 357.379,
+          "y": 112.6706,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 7,
+          "x": 402.4513,
+          "y": 335.2724,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 8,
+          "x": 364.8972,
+          "y": 1022.2766,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 9,
+          "x": 436.096,
+          "y": 446.2848,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 1,
+          "x": 637.2772,
+          "y": 295.127,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 2,
+          "x": 753.2836,
+          "y": 1239.902,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 3,
+          "x": 778.4476,
+          "y": 1017.3824,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 4,
+          "x": 648.3272,
+          "y": 1023.3804,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 5,
+          "x": 847.6616,
+          "y": 656.096,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 2,
+          "x": 1076.5785,
+          "y": 10.098,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 1,
+          "x": 176.196,
+          "y": 166.094,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 3,
+          "x": 877.546,
+          "y": 269.5487,
+          "rotation": 270.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 4,
+          "x": 877.546,
+          "y": 275.5467,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 5,
+          "x": 1121.6759,
+          "y": 489.9,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 6,
+          "x": 1202.5765,
+          "y": 10.098,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 7,
+          "x": 1245.8614,
+          "y": 196.096,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "tab_hook",
+          "part_index": 6,
+          "instance": 8,
+          "x": 1328.5745,
+          "y": 10.098,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 6,
+          "x": 1367.2975,
+          "y": 489.9,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 10,
+          "x": 487.3079,
+          "y": 720.1338,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 11,
+          "x": 759.2816,
+          "y": 1113.5663,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "disc",
+          "part_index": 1,
+          "instance": 12,
+          "x": 777.6938,
+          "y": 842.202,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "cover",
+          "part_index": 7,
+          "instance": 1,
+          "x": 399.7415,
+          "y": 702.094,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "cover",
+          "part_index": 7,
+          "instance": 2,
+          "x": 551.5901,
+          "y": 611.5632,
+          "rotation": 270.0,
+          "mirror": false
+        },
+        {
+          "part": "cover",
+          "part_index": 7,
+          "instance": 3,
+          "x": 1381.8594,
+          "y": 276.096,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 2,
+          "x": 246.194,
+          "y": 522.092,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 3,
+          "x": 236.096,
+          "y": 1239.7574,
+          "rotation": 270.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 4,
+          "x": 643.5146,
+          "y": 10.1,
+          "rotation": 90.0,
+          "mirror": false
+        }
+      ],
+      "files": {
+        "dxf": "sheet_01.dxf",
+        "gcode": "sheet_01.nc",
+        "svg": "sheet_01.svg"
+      },
+      "est_time_min": 17.0
+    },
+    {
+      "index": 2,
+      "sheet": "S235 3000x1500",
+      "width": 3000.0,
+      "height": 1500.0,
+      "material": "S235",
+      "thickness": 5.0,
+      "group": "S235 t=5",
+      "parts": 38,
+      "utilization": 0.2259,
+      "used_length": 978.7,
+      "cut_length": 39542.9,
+      "pierces": 129,
+      "rapid_length": 17229.5,
+      "remnant": [
+        978.7,
+        0.0,
+        3000.0,
+        1500.0
+      ],
+      "placements": [
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 7,
+          "x": 9.998,
+          "y": 9.998,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 8,
+          "x": 209.998,
+          "y": 268.4812,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 9,
+          "x": 9.998,
+          "y": 274.4792,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 10,
+          "x": 209.998,
+          "y": 532.9623,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 11,
+          "x": 9.998,
+          "y": 538.9603,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 12,
+          "x": 209.998,
+          "y": 797.4435,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "base_plate",
+          "part_index": 0,
+          "instance": 3,
+          "x": 269.998,
+          "y": 803.4415,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 13,
+          "x": 9.998,
+          "y": 1229.4395,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 14,
+          "x": 209.998,
+          "y": 1487.9227,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 15,
+          "x": 215.996,
+          "y": 9.998,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 2,
+          "x": 435.996,
+          "y": 215.996,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 3,
+          "x": 215.996,
+          "y": 591.994,
+          "rotation": 270.0,
+          "mirror": false
+        },
+        {
+          "part": "flange",
+          "part_index": 2,
+          "instance": 4,
+          "x": 226.4936,
+          "y": 1169.9126,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 4,
+          "x": 515.996,
+          "y": 671.1542,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 5,
+          "x": 435.996,
+          "y": 677.1522,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 6,
+          "x": 541.2362,
+          "y": 139.998,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 7,
+          "x": 275.996,
+          "y": 1053.1502,
+          "rotation": 270.0,
+          "mirror": false
+        },
+        {
+          "part": "mount_plate",
+          "part_index": 8,
+          "instance": 1,
+          "x": 441.994,
+          "y": 677.1522,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "mount_plate",
+          "part_index": 8,
+          "instance": 2,
+          "x": 441.994,
+          "y": 823.1502,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "mount_plate",
+          "part_index": 8,
+          "instance": 3,
+          "x": 490.7279,
+          "y": 1059.1482,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "mount_plate",
+          "part_index": 8,
+          "instance": 4,
+          "x": 521.994,
+          "y": 445.996,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "mount_plate",
+          "part_index": 8,
+          "instance": 5,
+          "x": 547.2342,
+          "y": 9.998,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "mount_plate",
+          "part_index": 8,
+          "instance": 6,
+          "x": 547.2342,
+          "y": 155.996,
+          "rotation": 0.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 8,
+          "x": 768.3724,
+          "y": 591.994,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 9,
+          "x": 816.7259,
+          "y": 969.1482,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "l_bracket",
+          "part_index": 4,
+          "instance": 10,
+          "x": 847.992,
+          "y": 301.994,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "strap",
+          "part_index": 5,
+          "instance": 4,
+          "x": 892.7239,
+          "y": 607.4145,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "strap",
+          "part_index": 5,
+          "instance": 5,
+          "x": 963.7516,
+          "y": 9.998,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "strap",
+          "part_index": 5,
+          "instance": 6,
+          "x": 968.7219,
+          "y": 655.996,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "cover",
+          "part_index": 7,
+          "instance": 4,
+          "x": 405.996,
+          "y": 1139.1482,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "cover",
+          "part_index": 7,
+          "instance": 5,
+          "x": 537.2342,
+          "y": 134.0,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 5,
+          "x": 176.094,
+          "y": 959.4375,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 6,
+          "x": 387.7446,
+          "y": 1286.7182,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "gusset",
+          "part_index": 3,
+          "instance": 16,
+          "x": 686.2563,
+          "y": 1490.002,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 7,
+          "x": 627.2342,
+          "y": 435.6582,
+          "rotation": 180.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 8,
+          "x": 582.094,
+          "y": 969.1482,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 9,
+          "x": 614.3582,
+          "y": 1205.1462,
+          "rotation": 90.0,
+          "mirror": false
+        },
+        {
+          "part": "shim",
+          "part_index": 9,
+          "instance": 10,
+          "x": 739.2427,
+          "y": 1205.1462,
+          "rotation": 90.0,
+          "mirror": false
+        }
+      ],
+      "files": {
+        "dxf": "sheet_02.dxf",
+        "gcode": "sheet_02.nc",
+        "svg": "sheet_02.svg"
+      },
+      "est_time_min": 18.9
+    }
+  ],
+  "parts": [
+    {
+      "name": "base_plate",
+      "file": "../parts/base_plate_Q3.dxf",
+      "quantity": 3,
+      "placed": 3,
+      "width": 420.0,
+      "height": 260.0,
+      "area": 95391.0,
+      "holes": 5,
+      "cut_length": 2028.4,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": [
+        "ignored 1 TEXT"
+      ]
+    },
+    {
+      "name": "disc",
+      "file": "../parts/disc_Q12.dxf",
+      "quantity": 12,
+      "placed": 12,
+      "width": 110.0,
+      "height": 109.98,
+      "area": 8972.4,
+      "holes": 1,
+      "cut_length": 427.3,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "flange",
+      "file": "../parts/flange_Q4.dxf",
+      "quantity": 4,
+      "placed": 4,
+      "width": 320.0,
+      "height": 319.98,
+      "area": 54685.7,
+      "holes": 9,
+      "cut_length": 2092.3,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "gusset",
+      "file": "../parts/gusset_Q16.dxf",
+      "quantity": 16,
+      "placed": 16,
+      "width": 200.0,
+      "height": 200.0,
+      "area": 23430.9,
+      "holes": 1,
+      "cut_length": 823.2,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "l_bracket",
+      "file": "../parts/l_bracket_Q10.dxf",
+      "quantity": 10,
+      "placed": 10,
+      "width": 300.0,
+      "height": 220.0,
+      "area": 29947.0,
+      "holes": 2,
+      "cut_length": 1303.4,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "strap",
+      "file": "../parts/strap_Q6.dxf",
+      "quantity": 6,
+      "placed": 6,
+      "width": 640.0,
+      "height": 70.0,
+      "area": 41513.3,
+      "holes": 3,
+      "cut_length": 1714.7,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "tab_hook",
+      "file": "../parts/tab_hook_Q8.dxf",
+      "quantity": 8,
+      "placed": 8,
+      "width": 180.0,
+      "height": 119.99,
+      "area": 16562.0,
+      "holes": 2,
+      "cut_length": 665.9,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "cover",
+      "file": "../parts/cover_Q5.svg",
+      "quantity": 5,
+      "placed": 5,
+      "width": 130.0,
+      "height": 80.0,
+      "area": 8913.7,
+      "holes": 2,
+      "cut_length": 594.5,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "mount_plate",
+      "file": "../parts/mount_plate_Q4.step",
+      "quantity": 6,
+      "placed": 6,
+      "width": 250.0,
+      "height": 140.0,
+      "area": 31154.7,
+      "holes": 5,
+      "cut_length": 1194.7,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    },
+    {
+      "name": "shim",
+      "file": null,
+      "quantity": 10,
+      "placed": 10,
+      "width": 80.0,
+      "height": 79.99,
+      "area": 5580.5,
+      "holes": 1,
+      "cut_length": 326.5,
+      "material": "S235",
+      "thickness": 5.0,
+      "warnings": []
+    }
+  ]
+}
