@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sheetnest"
+version = "0.1.0"
+description = "True-shape nesting engine for sheet metal and plate (plasma, laser, waterjet)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+keywords = ["nesting", "sheet metal", "plasma", "laser", "cnc", "dxf", "g-code", "cam", "solidworks"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+]
+authors = [{ name = "Azamat Kardanov", email = "azamat.kardanov@gmail.com" }]
+dependencies = [
+    "ezdxf>=1.1",
+    "shapely>=2.0",
+    "pyclipper>=1.3",
+    "numpy>=1.22",
+    "svgelements>=1.9",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+step = ["cadquery-ocp>=7.7"]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.urls]
+Homepage = "https://github.com/azmtkrdnv/sheetnest"
+Issues = "https://github.com/azmtkrdnv/sheetnest/issues"
+Changelog = "https://github.com/azmtkrdnv/sheetnest/blob/main/CHANGELOG.md"
+
+[project.scripts]
+sheetnest = "sheetnest.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sheetnest*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning:ezdxf.*", "ignore:.*deprecated.*:DeprecationWarning:pyparsing.*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+extend-exclude = ["examples/sample_output"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B"]
+ignore = ["E501", "E701", "E702", "E731", "E741", "B905"]
